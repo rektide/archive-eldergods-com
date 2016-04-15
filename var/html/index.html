@@ -8,12 +8,12 @@
 <link rel="icon" type="image/png" href="archive.png">
 <meta name="description" content="available offers out of the ElderGods archive">
 </head>
-<body>
+<body vocab="http://schema.org/" typeof="Service">
 
 
 <header id="header" name="header" role="banner" aria-labelled-by="archive-banner">
-	<h1 id="archive-banner">ElderGods Archive</h1>
-	<p>Collection of items available from the archive.</p>
+	<h1 id="archive-banner" property="name">ElderGods Archive</h1>
+	<p>Collection of <span property="serviceType">items available for loan</span> from the archive.</p>
 </header>
 
 <nav id="nav" name="nav" role="navigation" aria-labelled-by="categories-banner">
@@ -26,18 +26,352 @@
 </nav>
 
 <main id="offers" name="offers" aria-labelled-by="offers-banner">
-<h2 id="offers-banner">Offers</h2>
-<section id="books" name="books" role="region" aria-labelled-by="books-banner">
-	<h3 id="books-banner">Books</h3>
+<h1 id="offers-banner">Offers</h1>
+<section id="books" name="books" role="region" aria-labelled-by="books-banner" property="hasOfferCatalog" typeof="OfferCatalog">
+	<h2 id="books-banner" property="name">Books</h2>
+	<ul>
+		<li id="machinery-of-light" name="machinery-of-light" property="itemListElement" typeof="Book">
+			<form action="/book/machinery-of-light/borrow">
+				<h3 property="name">Machinery of Light</h3>
+				<p property="author" typeof="Person"><span property="name">David J Williams</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/machinery-of-light/borrow"/>
+					<link property="object" href="#machinery-of-light"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="gravitys-rainbow" name="gravitys-rainbow" property="itemListElement" typeof="Book">
+			<form action="/book/gravitys-rainbow/borrow">
+				<h3 property="name">Gravity's Rainbow</h3>
+				<p property="author" typeof="Person"><span property="name">Thomas Pynchon</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/gravitys-rainbow/borrow"/>
+					<link property="object" href="#gravitys-rainbow"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="2312" name="2312" property="itemListElement" typeof="Book">
+			<form action="/book/2312/borrow">
+				<h3 property="name">2312</h3>
+				<p property="author" typeof="Person"><span property="name">Kim Stanley Robinson</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/2312/borrow"/>
+					<link property="object" href="#2312"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="positive-computing" name="positive-computing" property="itemListElement" typeof="Book">
+			<form action="/book/positive-computing/borrow">
+				<h3 property="name">Positive Computing</h3>
+				<p property="author" typeof="Person"><span property="name">Rafael A Calvo</span> and</p>
+				<p property="author" typeof="Person"><span property="name">Dorian Peters</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/positive-computing/borrow"/>
+					<link property="object" href="#positive-computing"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="philosophy-and-simulation" name="philosophy-and-simulation" property="itemListElement" typeof="Book">
+			<form action="/book/philosophy-and-simulation/borrow">
+				<h3 property="name">Philosophy and Simulation: The Emergence of Synthetic Reason</h3>
+				<p property="author" typeof="Person"><span property="name">Miguel DeLanda</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/philosophy-and-simulation/borrow"/>
+					<link property="object" href="#philosophy-and-simulation"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="lord-of-light" name="lord-of-light" property="itemListElement" typeof="Book">
+			<form action="/book/lord-of-light/borrow">
+				<h3 property="name">Lords of Light</h3>
+				<p property="author" typeof="Person"><span property="name">Roger Zelazney</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/lord-of-light/borrow"/>
+					<link property="object" href="#lord-of-light"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="victorian-internet" name="victorian-internet" property="itemListElement" typeof="Book">
+			<form action="/book/victorian-internet/borrow">
+				<h3 property="name">Victorian Internet</h3>
+				<p property="author" typeof="Person"><span property="name">Tom Standage</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/victorian-internet/borrow"/>
+					<link property="object" href="#victorian-internet"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="book-of-trees" name="book-of-trees" property="itemListElement" typeof="Book">
+			<form action="/book/book-of-trees/borrow">
+				<h3 property="name">Book of Trees</h3>
+				<p property="author" typeof="Person"><span property="name">Manuel Lima</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/book-of-trees/borrow"/>
+					<link property="object" href="#book-of-trees"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="netty-in-action" name="netty-in-action" property="itemListElement" typeof="Book">
+			<form action="/book/netty-in-action/borrow">
+				<h3 property="name">Netty In Action</h3>
+				<p property="author" typeof="Person"><span property="name">Norman Maurer</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/netty-in-action/borrow"/>
+					<link property="object" href="#netty-in-action"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="three-body-problem" name="three-body-problem" property="itemListElement" typeof="Book">
+			<form action="/book/three-body-problem/borrow">
+				<h3 property="name">Three Body Prroblem</h3>
+				<p property="author" typeof="Person"><span property="name">iCixin Liu</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/three-body-problem/borrow"/>
+					<link property="object" href="#three-body-problem"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="MOL" name="MOL" property="itemListElement" typeof="Book">
+			<form action="/book/MOL/borrow">
+				<h3 property="name"></h3>
+				<p property="author" typeof="Person"><span property="name"></span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/MOL/borrow"/>
+					<link property="object" href="#MOL"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+
+		<li id="MOL" name="MOL" property="itemListElement" typeof="Book">
+			<form action="/book/MOL/borrow">
+				<h3 property="name"></h3>
+				<p property="author" typeof="Person"><span property="name"></span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/MOL/borrow"/>
+					<link property="object" href="#MOL"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+
+		<li id="immutable-laws-of-branding" name="immutable-laws-of-branding" property="itemListElement" typeof="Book">
+			<form action="/book/immutable-laws-of-branding/borrow">
+				<h3 property="name">The 22 Immutable Laws of Branding</h3>
+				<p property="author" typeof="Person"><span property="name">Al Ries</span> and</p>
+				<p property="author" typeof="Person"><span property="name">Laura Ries</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/immutable-laws-of-branding/borrow"/>
+					<link property="object" href="#immutable-laws-of-branding"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="MOL" name="MOL" property="itemListElement" typeof="Book">
+			<form action="/book/MOL/borrow">
+				<h3 property="name"></h3>
+				<p property="author" typeof="Person"><span property="name"></span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/MOL/borrow"/>
+					<link property="object" href="#MOL"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="internet-alley" name="internet-alley" property="itemListElement" typeof="Book">
+			<form action="/book/internet-alley/borrow">
+				<h3 property="name">Internet Alley: High Technology in Tysons Corner; 1945--2005</h3>
+				<p property="author" typeof="Person"><span property="name">Paul E. Ceruzzi</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/internet-alley/borrow"/>
+					<link property="object" href="#internet-alley"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="black-cloud" name="black-cloud" property="itemListElement" typeof="Book">
+			<form action="/book/black-cloud/borrow">
+				<h3 property="name">The Black Cloud</h3>
+				<p property="author" typeof="Person"><span property="name">Fred Hoyle</span> and</p>
+				<p property="author" typeof="Person"><span property="name">Geoffrey Hoyle</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/black-cloud/borrow"/>
+					<link property="object" href="#black-cloud"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="last-firewall" name="last-firewall" property="itemListElement" typeof="Book">
+			<form action="/book/last-firewall/borrow">
+				<h3 property="name">Last Firewall</h3>
+				<p property="author" typeof="Person"><span property="name">William Hertling</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/last-firewall/borrow"/>
+					<link property="object" href="#last-firewall"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="ai-apocalypse" name="ai-apocalypse" property="itemListElement" typeof="Book">
+			<form action="/book/ai-apocalypse/borrow">
+				<h3 property="name">AI Apocalypse</h3>
+				<p property="author" typeof="Person"><span property="name">William Hertling</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/ai-apocalypse/borrow"/>
+					<link property="object" href="#ai-apocalypse"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="dealers-of-lightning" name="dealers-of-lightning" property="itemListElement" typeof="Book">
+			<form action="/book/dealers-of-lightning/borrow">
+				<h3 property="name">Dealers of Lightning: Xerox PARC and the Dawn of the Computer Age</h3>
+				<p property="author" typeof="Person"><span property="name">Michael Hiltzik</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/dealers-of-lightning/borrow"/>
+					<link property="object" href="#dealers-of-lightning"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="where-the-wizards" name="where-the-wizards" property="itemListElement" typeof="Book">
+			<form action="/book/where-the-wizards/borrow">
+				<h3 property="name">Where the Wizards Stay Up Late</h3>
+				<p property="author" typeof="Person"><span property="name">Katie Hafner</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/where-the-wizards/borrow"/>
+					<link property="object" href="#where-the-wizards"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="dark-intelligence" name="dark-intelligence" property="itemListElement" typeof="Book">
+			<form action="/book/dark-intelligence/borrow">
+				<h3 property="name">Dark Intelligence</h3>
+				<p property="author" typeof="Person"><span property="name">Neal Asher</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/dark-intelligence/borrow"/>
+					<link property="object" href="#dark-intelligence"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="webrtc-apis-and-rtcweb-protocols" name="webrtc-apis-and-rtcweb-protocols" property="itemListElement" typeof="Book">
+			<form action="/book/webrtc-apis-and-rtcweb-protocols/borrow">
+				<h3 property="name">WebRTC: APIs and RTCWEB Protocols of the HTML5 Real-Time Web</h3>
+				<p property="author" typeof="Person"><span property="name">Alan B Johnston</span> and</p>
+				<p property="author" typeof="Person"><span property="name">Daniel C Burnett</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/webrtc-apis-and-rtcweb-protocols/borrow"/>
+					<link property="object" href="#webrtc-apis-and-rtcweb-protocols"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="new-media-reader" name="new-media-reader" property="itemListElement" typeof="Book">
+			<form action="/book/new-media-reader/borrow">
+				<h3 property="name">The New Media Reader</h3>
+				<p property="author" typeof="Person"><span property="name">Noah Wardrip-Fruin</span> and</p>
+				<p property="author" typeof="Person"><span property="name">Nick Montfort</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/new-media-reader/borrow"/>
+					<link property="object" href="#new-media-reader"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="virtual-science-and-intensive-philosophy" name="virtual-science-and-intensive-philosophy" property="itemListElement" typeof="Book">
+			<form action="/book/virtual-science-and-intensive-philosophy/borrow">
+				<h3 property="name">Intensive Science and Virtual Philosophy</h3>
+				<p property="author" typeof="Person"><span property="name">Miguel DeLanda</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/virtual-science-and-intensive-philosophy/borrow"/>
+					<link property="object" href="#virtual-science-and-intensive-philosophy"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="crux" name="crux" property="itemListElement" typeof="Book">
+			<form action="/book/crux/borrow">
+				<h3 property="name">Crux</h3>
+				<p property="author" typeof="Person"><span property="name">Ramez Naam</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/crux/borrow"/>
+					<link property="object" href="#crux"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="tools-for-thought" name="tools-for-thought" property="itemListElement" typeof="Book">
+			<form action="/book/tools-for-thought/borrow">
+				<h3 property="name">Tools for Thought</h3>
+				<p property="author" typeof="Person"><span property="name">Howard Rheingold</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/tools-for-thought/borrow"/>
+					<link property="object" href="#tools-for-thought"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+		<li id="quantum-thief" name="quantum-thief" property="itemListElement" typeof="Book">
+			<form action="/book/quantum-thief/borrow">
+				<h3 property="name">Quantum Thief</h3>
+				<p property="author" typeof="Person"><span property="name">Hannu Rajaniemi</span></p>
+				<div property="potentialAction" typeof="BorrowAction">
+					<button type="submit" property="name">Borrow</button>
+					<meta property="target" content="/book/quantum-thief/borrow"/>
+					<link property="object" href="#quantum-thief"/>
+					<link property="actionStatus" href="http://schema.org/PotentialActionStatus"/>
+				</div>
+			</form>
+		</li>
+	</ul>
 </section>
-<section id="chips" name="chips" >
+
+<section id="chips" name="chips" role="region" aria-labelled-by="chips-banner" property="hasOfferCatalog" typeof="OfferCatalog">
 	<h3 id="chips-banner">Chipware</h3>
 </section>
 </main>
 
 <footer id="footer" name="footer" role="contentinfo" aria-lablled-by="footer-banner">
 <h2 id="footer-banner">Site Info</h2>
-<p>ElderGods Archive is a person collection on offer from one <a href="mailto:rektide@eldergods.com">rektide@eldergods.com</a>. For now, please submit email requests for fulfilment. Normal loan time is 2 weeks. Price is free, with optional 1 whuffie payment.</p>
+<p>ElderGods Archive is a person collection on offer from one <a href="mailto:rektide@eldergods.com" property="email">rektide+archive@eldergods.com</a>. For now, please submit email requests for fulfilment. Normal loan time is 2 weeks. Price is free, with optional 1 whuffie payment.</p>
 </footer>
 
 </body>
